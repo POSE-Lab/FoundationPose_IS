@@ -1,6 +1,6 @@
 # FoundationPose_IS
 
-## Run FoundationPose on IndustryShapes:
+Follow these steps to run FoundationPose on the IndustryShapes dataset.
 
 ### Apply some minor modifications to the FoundationPose repo:
 
