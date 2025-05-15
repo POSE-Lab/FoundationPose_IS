@@ -14,7 +14,7 @@ Follow these steps to run FoundationPose on the IndustryShapes dataset.
 Follow the Data Preparation steps in the FoundationPose directory.
 
 
-Download the IndustryShapes dataset from ___ and place it in the `FoundationPose/BOP` dir
+Download the IndustryShapes dataset from [here](https://huggingface.co/datasets/POSE-Lab/IndustryShapes) and place it in the `FoundationPose/BOP` dir
 
 ### For the model-based setup:
 
