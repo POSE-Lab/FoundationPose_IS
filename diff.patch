@@ -232,7 +232,7 @@ index b7a6606..ef617bf
  
  
 -BOP_LIST = ['lmo','tless','ycbv','hb','tudl','icbin','itodd']
-+BOP_LIST = ['lmo','tless','ycbv','hb','tudl','icbin','itodd', 'industrial']
++BOP_LIST = ['lmo','tless','ycbv','hb','tudl','icbin','itodd', 'industryshapes']
  BOP_DIR = os.getenv('BOP_DIR')
  
  def get_bop_reader(video_dir, zfar=np.inf):
@@ -240,7 +240,7 @@ index b7a6606..ef617bf
      return IcbinReader(video_dir, zfar=zfar)
    if 'itodd' in video_dir:
      return ItoddReader(video_dir, zfar=zfar)
-+  if 'industrial' in video_dir:
++  if 'industryshapes' in video_dir:
 +    return IndustrialReader(video_dir, zfar=zfar)
 +  if 'hope' in video_dir:
 +    return HopeReader(video_dir, zfar=zfar)
@@ -266,8 +266,8 @@ index b7a6606..ef617bf
 +    video_dirs = sorted(glob.glob(f'{BOP_DIR}/icbin/test/*'))
    elif dataset=='itodd':
      video_dirs = sorted(glob.glob(f'{BOP_DIR}/itodd/itodd_test_bop19/test/*'))
-+  elif dataset=='industrial':
-+    video_dirs = sorted(glob.glob(f'{BOP_DIR}/industrial/test/*'))
++  elif dataset=='industryshapes':
++    video_dirs = sorted(glob.glob(f'{BOP_DIR}/industryshapes/test/*'))
 +  elif dataset=='hope':
 +    video_dirs = sorted(glob.glob(f'{BOP_DIR}/hope/test/*'))
    else:
@@ -447,7 +447,7 @@ index b7a6606..ef617bf
 +class IndustrialReader(BopBaseReader):
 +  def __init__(self, base_dir, zfar=np.inf):
 +    super().__init__(base_dir, zfar=zfar)
-+    self.dataset_name = 'industrial'
++    self.dataset_name = 'industryshapes'
 +    self.ob_ids = np.arange(1,6).astype(int).tolist()
 +    self.K = list(self.K_table.values())[0]
 +    self.load_symmetry_tfs()
