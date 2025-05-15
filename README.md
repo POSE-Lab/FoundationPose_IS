@@ -11,10 +11,10 @@ Follow these steps to run FoundationPose on the IndustryShapes dataset.
 
 ## Data preparation & Docker container setup
 
-Follow the Data Preparation steps in the FoundationPose directory.
+Follow the [Data Preparation steps](https://github.com/NVlabs/FoundationPose?tab=readme-ov-file#data-prepare) in the FoundationPose directory.
 
 
-Download the IndustryShapes dataset from [here](https://huggingface.co/datasets/POSE-Lab/IndustryShapes) and place it in the `FoundationPose/BOP` dir
+Download the IndustryShapes dataset from [here](https://huggingface.co/datasets/POSE-Lab/IndustryShapes) and place it in the `FoundationPose/BOP` directory.
 
 ### For the model-based setup:
 
