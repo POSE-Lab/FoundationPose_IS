@@ -790,7 +790,7 @@ index b927bc6..c452989
 +            res[video_id][id_str].setdefault(inst_ob_id, []).extend(poses)
 +
 +  dataset_name = os.path.basename(opt.dataset_dir.strip("/"))
-+  with open(f'{opt.debug_dir}/{dataset_name}_model_based_classic_FINAL.yml', 'w') as ff:
++  with open(f'{opt.debug_dir}/{dataset_name}.yml', 'w') as ff:
 +      yaml.safe_dump(make_yaml_dumpable(res), ff)
  
 -  with open(f'{opt.debug_dir}/linemod_res.yml','w') as ff:
